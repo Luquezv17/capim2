@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Luque">
+    <meta name="description" content="Capim Urbano - Site de vendas de flores desidratadas e artigos de decoração. Conecte-se com a natureza através de nossos produtos exclusivos.">
+    <meta name="keywords" content="flores desidratadas, artigos de decoração, bolas de natal, garrafinha, difusor de ambiente, Capim Urbano">
+    <title>Capim Urbano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo Capim Urbano">
+            </div>
+            <div class="actions">
+                <button class="loja-button" onclick="abrirModal()">Conheça nossa loja</button>
+                <a href="https://w.app/16loke" target="_blank" class="peca-ja-button">Peça Já</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="carrossel">
+                <!-- Carrossel de produtos -->
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="imagens/bolas-de-natal.jpg" alt="Bolas de Natal">
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="imagens/garrafinha.jpg" alt="Garrafinha">
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="imagens/difusor-de-ambiente.jpg" alt="Difusor de Ambiente">
+                    </div>
+                </div>
+            </div>
+            <div class="carrossel-nav">
+                <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Descrição da loja -->
+        <section id="descricao-loja">
+            <h2>Sobre a Capim Urbano</h2>
+            <p>A Capim Urbano nasceu da paixão pela natureza e pela celebração de momentos especiais. Nosso ateliê é um espaço dedicado a transformar flores naturais em experiências inesquecíveis. Combinamos a beleza das flores com a delicadeza do design artesanal para criar produtos que vão muito além do simples decorativo.</p>
+            <p>      </p>
+            <p>Nosso foco é proporcionar a você uma verdadeira conexão com a natureza, trazendo um aroma único para seus ambientes e celebrações. O aroma das flores que, de uma forma encantadora, eternizam momentos especiais, agora estará presente por mais tempo, permitindo que cada fragrância traga à tona memórias agradáveis sempre que for sentido.</p>
+            <p>      </p>
+            <p>Em cada peça, nós infundimos uma dose de sofisticação e exclusividade. O ateliê Capim Urbano é especialista em produtos que encantam pela sua autenticidade, qualidade e estética impecável. Trabalhamos com flores desidratadas de forma cuidadosa, permitindo que sua beleza e fragrância se mantenham por mais tempo, sem perder sua essência natural. Cada item é feito manualmente, com atenção a cada detalhe, para garantir que cada peça tenha a qualidade e o charme que você merece.</p>
+        
+    
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!4v1732226857704!6m8!1m7!1sCAoSLEFGMVFpcE9ZQTFDeUhyWWZyUXlOUmQ2eTFWSFNtM0NiMklBTm5Jd3lYNFBy!2m2!1d-28.4728543955715!2d-48.98925751647459!3f357.69457761005384!4f5.768464657467291!5f0.7820865974627469"
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Capim Urbano. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
